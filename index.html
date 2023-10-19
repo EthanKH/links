@@ -3,9 +3,9 @@
   <head>
     <style>
 
-      * {
+      /* * {
         border: thin red solid;
-      }
+      } */
       body {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -24,7 +24,6 @@
         color: #fffffe;
         text-decoration: none;
         display: flex;
-        
       }
 
       .socials a {
@@ -39,25 +38,32 @@
         object-fit: cover;
       }
 
-      .tallnail {
-
-      }
-
-      .shortnail {
-
-      }
-
-      .link {
-        background-color: #f39898;
-        display: flex;
+      .link-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
         align-items: center;
       }
 
-      .link a {
-        color: #001e1d;
-        text-decoration: none;
+      .link-list li {
+        margin: 5px 0;
         text-align: center;
-        flex-grow: 1;
+      }
+
+      .link-list a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #007BFF;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .link-list a:hover {
+        background-color: #0056b3;
+        border: 2px solid #0056b3;
       }
 
       .items {
@@ -89,30 +95,13 @@
         </a>
       </div>
 
-      <div>
-        <p>Interests</p>
-      </div>
+      <ul class="link-list">
+        <li><a href="https://dev.to/ehuang">My Dev.to blog</a></li>
+        <li><a href="https://www.hep2go.com/">Used to be a rehab aide, look up rehabilitation exercises here!</a></li>
+        <li><a href="https://mydramalist.com/profile/10095469">Keep up with the Korean dramas I watch here (empty right now)</a></li>
+      </ul>
+      
 
-      <div class="link">
-        <img class="thumbnails"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1024px-Nintendo.svg.png">
-
-        <a target="_blank" href="http://paulgraham.com/startupideas.html">Video Games! Currently playing
-        </a>
-      </div>
-
-      <div class="link">
-        <img class="thumbnails" src="/thumbnails/typography.jpg">
-
-        <a target="_blank"
-          href="https://practicaltypography.com/typography-in-ten-minutes.html">Korean Dramas!</a>
-      </div>
-
-      <div class="link">
-        <img class="thumbnails"
-          src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg">
-
-        <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">Working out!</a>
       </div>
     </div>
   </body>
